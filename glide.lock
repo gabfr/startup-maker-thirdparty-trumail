@@ -1,10 +1,10 @@
-hash: b97504e89a2dea7b86550c3f8aec2cccba59166a9e623ba1deac004fc5a6ef68
-updated: 2019-07-09T11:18:50.515015-03:00
+hash: 0fb7cac7faea58451eb6a0fc441d4447596a52c7b43c5ef2127a80969ed9c708
+updated: 2019-07-09T11:38:17.901325-03:00
 imports:
 - name: github.com/dgrijalva/jwt-go
   version: 5e25c22bd5d6de03265bbe5462dcd162f85046f6
-- name: github.com/entrik/httpclient
-  version: 1edd92c410ce1e5cdcd11be9f23d6a2d89e5c2a4
+- name: github.com/joho/godotenv
+  version: 23d116af351c84513e1946b527c88823e476be13
 - name: github.com/labstack/echo
   version: 38772c686c76b501f94bd6cd5b77f5842e93b559
   subpackages:
@@ -44,6 +44,8 @@ imports:
   - transform
   - unicode/bidi
   - unicode/norm
+- name: s32x.com/httpclient
+  version: 1edd92c410ce1e5cdcd11be9f23d6a2d89e5c2a4
 testImports:
 - name: github.com/davecgh/go-spew
   version: d8f796af33cc11cb798c1aaeb27a4ebc5099927d

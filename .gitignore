@@ -2,3 +2,4 @@ run.sh
 /vendor
 trumail
 .idea
+.env

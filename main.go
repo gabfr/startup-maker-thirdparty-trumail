@@ -1,6 +1,8 @@
 package main
 
 import (
+	"github.com/joho/godotenv"
+
 	"log"
 	"net"
 	"os"
@@ -18,6 +20,8 @@ var (
 	port = getEnv("PORT", "8080")
 	// sourceAddr defines the address used on verifier
 	sourceAddr = getEnv("SOURCE_ADDR", "admin@gmail.com")
+	// indicates wether the dotEnv was loaded or not
+	loadedDotEnv = false
 )
 
 func main() {
@@ -75,6 +79,13 @@ func authMiddleware(next echo.HandlerFunc) echo.HandlerFunc {
 // getEnv retrieves variables from the environment and falls back
 // to a passed fallback variable if it isn't set
 func getEnv(key, fallback string) string {
+	if loadedDotEnv == false {
+		err := godotenv.Load();
+		if err != nil {
+			log.Fatal("Error loading .env file")
+		}
+		loadedDotEnv = true;
+	}
 	if value, ok := os.LookupEnv(key); ok {
 		return value
 	}
