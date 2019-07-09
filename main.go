@@ -1,17 +1,18 @@
 package main
 
 import (
-	"github.com/joho/godotenv"
 
 	"log"
 	"net"
 	"os"
 	"strings"
 
+	"./api"
+	"./verifier"
+
+	"github.com/joho/godotenv"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
-	"github.com/sdwolfe32/trumail/api"
-	"github.com/sdwolfe32/trumail/verifier"
 	"s32x.com/httpclient"
 )
 
