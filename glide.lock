@@ -1,46 +1,44 @@
-hash: 1bc3cfac2a130e4eed07855929a267d06767328e388d08db0c99c25d07990e15
-updated: 2018-06-14T13:28:54.104458282-07:00
+hash: b97504e89a2dea7b86550c3f8aec2cccba59166a9e623ba1deac004fc5a6ef68
+updated: 2019-07-09T11:18:50.515015-03:00
 imports:
 - name: github.com/dgrijalva/jwt-go
-  version: 06ea1031745cb8b3dab3f6a236daf2b0aa468b7e
+  version: 5e25c22bd5d6de03265bbe5462dcd162f85046f6
 - name: github.com/entrik/httpclient
-  version: ab56aa95da87432c47007acaecbbd2f3ef9703e9
+  version: 1edd92c410ce1e5cdcd11be9f23d6a2d89e5c2a4
 - name: github.com/labstack/echo
-  version: d36ff729613dd8e825455c504bea0586c43ac03d
+  version: 38772c686c76b501f94bd6cd5b77f5842e93b559
   subpackages:
   - middleware
 - name: github.com/labstack/gommon
-  version: d6898124de917583f5ff5592ef931d1dfe0ddc05
+  version: d700b06ce5f78800a08e16a7288a4cca389a6e83
   subpackages:
   - bytes
   - color
   - log
   - random
 - name: github.com/mattn/go-colorable
-  version: efa589957cd060542a26d2dd7832fd6a6c6c3ade
+  version: c52ace132bf44798a21f16fdafaaafbf329519e2
 - name: github.com/mattn/go-isatty
-  version: 6ca4dbf54d38eea1a992b3c722a76a5d1c4cb25c
-- name: github.com/patrickmn/go-cache
-  version: 9f6ff22cfff829561052f5886ec80a2ac148b4eb
+  version: da60ac76bf7019a8b005f8dd1ad9d1a0e6434155
 - name: github.com/valyala/bytebufferpool
-  version: e746df99fe4a3986f4d4f79e13c1e0117ce9c2f7
+  version: cdfbe9377474227bb42120c1e22fd4433e7f69bf
 - name: github.com/valyala/fasttemplate
-  version: dcecefd839c4193db0d35b88ec65b4c12d360ab0
+  version: 8b5e4e491ab636663841c42ea3c5a9adebabaf36
 - name: golang.org/x/crypto
-  version: 5cd40a374b80f104c75043e6a04071d3a743ffd9
+  version: 4def268fd1a49955bfb3dda92fe3db4f924f2285
   subpackages:
   - acme
   - acme/autocert
 - name: golang.org/x/net
-  version: db08ff08e8622530d9ed3a0e8ac279f6d4c02196
+  version: da137c7871d730100384dbcf36e6f8fa493aef5b
   subpackages:
   - idna
 - name: golang.org/x/sys
-  version: 8883426083c04a2627e6e59d84d5f6fb63d16c91
+  version: 04f50cda93cbb67f2afa353c52f342100e80e625
   subpackages:
   - unix
 - name: golang.org/x/text
-  version: 5c1cf69b5978e5a34c5f9ba09a83e56acc4b7877
+  version: 342b2e1fbaa52c93f31447ad2c6abc048c63e475
   subpackages:
   - secure/bidirule
   - transform
@@ -48,16 +46,20 @@ imports:
   - unicode/norm
 testImports:
 - name: github.com/davecgh/go-spew
-  version: 8991bc29aa16c548c550c7ff78260e27b9ab7c73
+  version: d8f796af33cc11cb798c1aaeb27a4ebc5099927d
   subpackages:
   - spew
+- name: github.com/kr/pretty
+  version: a0c635c0aede2cb0c2f8bb0f0d70485fbdd11bd4
+- name: github.com/kr/text
+  version: e2ffdb16a802fe2bb95e2e35ff34f0e53aeef34f
 - name: github.com/pmezard/go-difflib
-  version: 792786c7400a136282c1664665ae0a8db921c6c2
+  version: 5d4384ee4fb2527b0a1256a821ebfc92f91efefc
   subpackages:
   - difflib
 - name: github.com/stretchr/testify
-  version: f35b8ab0b5a2cef36673838d662e249dd9c94686
+  version: ae5876d09ad6d0d68dff8d969e518db26e0e7969
   subpackages:
   - assert
 - name: gopkg.in/check.v1
-  version: 20d25e2804050c1cd24a7eea1e7a6447dd0e74ec
+  version: 788fd78401277ebd861206a03c884797c6ec5541
